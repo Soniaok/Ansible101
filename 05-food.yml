@@ -10,9 +10,9 @@
         state: present
 
     - name: Install Httpd
-       yum:
+      yum:
         name: httpd
-       state: present
+      state: present
 
     - name: Start httpd
       service:
