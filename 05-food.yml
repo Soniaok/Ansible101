@@ -14,7 +14,7 @@
         name: httpd
         state: present
 
-     - name: Start Httpd
+    - name: Start Httpd
       service:
         name: httpd
         state: started
