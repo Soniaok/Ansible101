@@ -9,8 +9,13 @@
         name: git
         state: present
 
+    - name: Ensure /var/www/html directory exists
+      file:
+        path: /var/www/html
+        state: directory
+
     - name: Host Code
       git:
         repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
         dest: /var/www/html
-... 
+...
