@@ -8,5 +8,5 @@
       copy:
         src: Maintenace.html
         dest: /var/www/html/index.html
-        force: yes
+        
 ... 
