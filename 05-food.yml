@@ -4,9 +4,9 @@
   become: yes
 
   tasks:
-    - name: Install git
-  yum:
-    name: git
+   - name: Install git
+      yum:
+    name: git      
     state: present
 
 
