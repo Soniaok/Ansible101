@@ -9,10 +9,15 @@
         name: git
         state: present
 
-    - name: Ensure /var/www/html directory exists
-      file:
-        path: /var/www/html
-        state: directory
+        - name: Install Httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start httpd
+      service:
+        name: httpd
+        enabled: yes
 
     - name: Host Code
       git:
