@@ -10,13 +10,22 @@
         state: present
 
       - name: Install Httpd
-      yum:
+       yum:
         name: httpd
         state: present
 
+     - name: Start Httpd
+      service:
+        name: httpd
+        state: started
 
-    - name: Host Code
-      git:
+        - name: Enable Httpd
+      service:
+        name: httpd
+        enabled: yes
+
+      - name: Host Code
+        git:
         repo: https://github.com/CeeyIT-Solutions/food3.git
         dest: /var/www/html
 ... 
