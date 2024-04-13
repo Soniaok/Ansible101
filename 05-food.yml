@@ -6,7 +6,7 @@
   tasks:
     - name: Install GIT
       yum:
-        name: git
+       name: git
         state: present
 
     - name: Install Httpd
