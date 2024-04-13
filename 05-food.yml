@@ -4,13 +4,13 @@
   become: yes
 
   tasks:
-  - name: Install GIT
+    - name: Install GIT
       yum:
         name: git
         state: present
 
     - name: Install Httpd
-       yum:
+      yum:
         name: httpd
         state: present
 
@@ -19,13 +19,13 @@
         name: httpd
         state: started
 
-        - name: Enable Httpd
+    - name: Enable Httpd
       service:
         name: httpd
         enabled: yes
 
-      - name: Host Code
-        git:
+    - name: Host Code
+      git:
         repo: https://github.com/CeeyIT-Solutions/food3.git
         dest: /var/www/html
-... 
+...
