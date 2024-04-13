@@ -9,8 +9,8 @@
         name: git
         state: present
 
-- name: Install Httpd
-  yum:
+ - name: Install Httpd
+   yum:
     name: httpd
     state: present
 
