@@ -1,6 +1,6 @@
 ---
 - name: Deploy web app
-  hosts: g1
+  hosts: n1
   become: yes
 
   tasks:
@@ -18,5 +18,5 @@
       git:
         repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
         dest: /var/www/html
-        force: yes
+        
 ...
