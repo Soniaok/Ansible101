@@ -7,6 +7,6 @@
     - name: Update maintenance
       copy:
         src: Maintenace.html
-        dest: /var/www/html/index.html
+        dest: /var/www/html
         force: yes
 ... 
